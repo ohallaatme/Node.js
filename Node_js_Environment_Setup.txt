@@ -1,0 +1,39 @@
+Questions
+
+1. 
+
+Q: What is npm and what does it do?
+
+A: Npm stands for Node Package Manager. It is a command line took that allows us to install node packages to build our applications with. It also takes care of dependency management, meaning that packages our app depends on to work will be taken care of through rpm (npm init command) through the package.json filename generates.
+
+
+2.
+
+Q: What kind of information does package.json hold?
+
+A: package.json holds information to communicate to npm on how a node.js application is structured.
+
+3.
+
+Q: Google another Node package. Using the demo directory run npm install <theNameOfThePackage> --save. Check the contents of your package.json file to make sure that the dependencies list the name of the Node package.
+
+A: I picked grunt, a Javascript task runner. Grunt was added to my package.json file as follows:
+
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Demo for node.js setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Katie O'Halloran",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "grunt": "^1.0.4"
+  }
+}
