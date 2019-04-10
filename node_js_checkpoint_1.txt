@@ -1,0 +1,39 @@
+
+Questions
+
+
+1.
+
+Q: In your own words highlight the differences in functionality and purposes Client-Side and Server-Side code serves in a full-stack web application.
+
+A: Differences include:
+
+- Server side code runs in processes whereas client side runs in the browser
+
+- Server side code doesn't render anything whereas client side does
+
+- Server side code sends responses, client side makes requests
+
+- Client side code handles interactions from the user, server side handles requests 
+
+- Client side code uses script tags to split code, server side uses modules
+
+
+2. 
+
+Q1: What explains Nodes' rise in popularity and use? 
+
+A1: Probably the biggest reason Node.js has risen so much in popularity is because it uses Javascript as the main language to build web applications for both the client side and server side, eliminating the need for separate language and revolutionizing the server.
+
+
+
+Q2: What does "Isomorphic JavaScript programming" mean? 
+
+A2: Per the above, Isomorphic JavaScript programming means that your full stack application can be developed in only Javascript
+
+
+
+
+Q3: Provide some real-world examples not listed in this checkpoint of companies using Node.js.
+
+A3: Walmart, LinkedIn, Medium, PayPal, Trello, Groupon 
