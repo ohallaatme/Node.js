@@ -1,0 +1,57 @@
+Questions
+
+1.
+
+Q: Why is the fs core module important for Node development?
+
+A: The fs core module is important for Node development because Server side languages must provide a way to access the file system within the code and the fs module allows us to do this with Node.js.
+
+2.
+
+Q: What is the difference between sync and non-sync methods in the fs module?
+
+A: Sync methods in the Node.js module means that your code runs in sequential order (blocking) whereas non-sync methods mean that your code does not wait for the current line to execute before moving along to the next line (non-blocking)
+
+
+3. 
+
+Q: Why are modules used?
+
+A: Modules are used because it is an efficient way to include sets of functions we want to include in our node applications without having to write from scratch ourselves.
+
+4.
+
+Q: Why are libraries such as fs used in Node programming?
+
+A: To allow us to access our file system through code for our application.
+
+
+Code
+
+Q: Create a Github repo called simple-http-node-server. Create an HTTP server on port 3000 with a request handler that creates a file named hello-world.txt. You will be using the fs module to do this. Write the content: "Hello to this great world" to the hello-world.txt file. Please submit your finished code in your submission.
+
+A:
+
+```Node.js
+
+const http = require('http');
+const port = 3000;
+
+const requestHandler = (request, response) => {
+  response.end(`Handling a request on port ${port}`)
+};
+
+const server = http.createServer(requestHandler);
+
+server.listen(port, (err) => {
+  if (err) {
+    return console.log(`You have an error:  ${err}`);
+  }
+
+  console.log(`server is listening on ${port}`);
+});
+
+
+fs. writeFile('hello-world.txt', 'Hello to this great world', 'utf8')
+
+
