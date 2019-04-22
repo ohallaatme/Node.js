@@ -1,0 +1,22 @@
+Questions
+
+1. 
+
+Q: Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+
+
+A:
+
+
+	- sort - sort returns the file sorted alphabetically by line. The output of 	running this on commands.js was the code returned but sorted alphabetically by line.
+
+	- wc - wc prints the line, word, and byte counts for a file. When I ran this on commands.js it returns that I have 42 lines, 115 words and my file has a byte count of 1069
+
+	- uniq - uniq sorts each line in a file and only returns distinct line. When running this on commands.js it just returns the file like a cat command because I had no duplicate lines in my file.
+
+
+2. 
+
+Q: Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific data was outputted.
+
+A: I ran echo commands.js | wc and it returned the lines, words and characters in the words commands.js
